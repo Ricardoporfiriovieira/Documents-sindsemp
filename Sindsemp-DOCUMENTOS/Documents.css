@@ -246,9 +246,7 @@ h1{
   background-color: rgb(221, 227, 232);
   line-height: 30px;
 }
-#text-area::-webkit-scrollbar {
-  overflow: hidden;
-}
+
 
 textarea{
   margin-left: 60px;
@@ -258,6 +256,22 @@ textarea{
 
   width: 50%;
 }
+
+
+@media (max-width: 620px) {
+  #text-area{
+    width: 80%;
+  } 
+
+  textarea{
+    margin: 40px;
+  }
+
+  h1{
+    margin-left: 40px;
+  }
+}
+
 
 /* =============== */
 
