@@ -1,0 +1,37 @@
+/* -------------------- MAIN -------------------- */
+main{
+  margin-bottom: 10%;
+}
+
+h1{
+  margin-top: 5%;
+  margin-left: 4.5%;
+  border-left: 2px #cc0202 solid;
+  padding-left: 0.5rem;
+  margin-bottom: 8vh;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.download-image{
+  margin-left: 1%;
+  width: 2vw;
+  min-width: 18px;
+}
+
+.links-downloads{
+  margin-left: 4.5%;
+  padding-bottom: 1%;
+  border-bottom: 2px #cc0202 solid;
+  margin-right: 30%;
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.text-to-links{
+  margin-left: 2%;
+  font-size: 0.8rem;
+  color: black;
+}
