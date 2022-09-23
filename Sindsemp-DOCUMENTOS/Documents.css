@@ -71,7 +71,7 @@
     align-items: center;
   }
   
-  .nav-links a:hover {
+  ul.nav-links > li a:hover {
     background-color: rgb(100, 10, 10);
     color: inherit;
   }
@@ -83,6 +83,7 @@
     margin-top: 1.4rem;
     border-radius: 2rem;
     background-color: red;
+    
   }
   
   .search-box {
@@ -107,6 +108,97 @@
     cursor: pointer;
     margin-right: 0.2rem;
   }
+
+  /*=========== menu dropdown ==========*/
+
+
+
+  .dropdown-documents {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 48px;
+    background-color: #cc0202;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 99;
+    line-height: 30px;
+   
+  }
+  
+  .dropdown-documents:hover .dropdown-content {
+    display: block;
+  }
+
+  /*********************************/
+
+  .dropdown-content {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    background-color: #cc0202;
+  }
+  
+  .dropdown-content li {
+    position: relative;
+  }
+  
+  .dropdown-content li a {
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    
+  }
+  
+  .dropdown-content li ul {
+    position: absolute;
+    top: 0%;
+    margin: 0;
+    
+    list-style: none;
+    display: none;
+    left: 100%;
+    line-height: normal;
+    background-color: #cc0202;
+  }
+  
+
+  
+  .dropdown-content li ul li ul {
+    left: 100%;
+    top: 0;
+    
+  }
+  
+
+  
+  ul li:hover>ul {
+    display: block;
+  }
+
+  .dropdown-documents{
+    width: 100%;
+  }
+
+
+  @media screen and (max-width: 780px){
+    
+  }
+
+  /*********************************/
+
+
+
+  
+
+  /*=========== menu dropdown ==========*/
   
   .hamburger {
     display: block;
@@ -199,6 +291,7 @@
     .dropdown.is-active {
       display: none;
     }
+
   }
   
   @media screen and (max-width: 780px) {
@@ -212,30 +305,37 @@
   
     .search-box {
       margin: 0;
-    }
+    }   
+
   }
 
-/* =============== */
+/* =============== DOCUMENTS =========== */
+
 
 .documentos{
   margin: 2rem 0;
+  
+
 }
 
 
 h1{
 
-  margin-left: 60px;
-  margin-bottom: 1rem;
+  margin-top: 5%;
+  margin-left: 13%;
   border-left: 2px #cc0202 solid;
   padding-left: 0.5rem;
-  font-weight:lighter;
+  margin-bottom: 8vh;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
   
   
 }
 
 #text-area{
-  width: 60%;
-  height: 300px;
+  width: 80%;
+  height: 80vh;
   resize: none;
   border-radius: 10px;
   font-size: 14px;
@@ -258,6 +358,11 @@ textarea{
 }
 
 
+.container-center{
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 620px) {
   #text-area{
     width: 80%;
@@ -267,13 +372,11 @@ textarea{
     margin: 40px;
   }
 
-  h1{
-    margin-left: 40px;
-  }
+
 }
 
 
-/* =============== */
+/* =============== DOCUMENTS =======================*/
 
 
 /* FOOTER */
