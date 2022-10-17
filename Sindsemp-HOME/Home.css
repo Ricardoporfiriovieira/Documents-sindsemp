@@ -195,7 +195,7 @@ nav {
   gap: 0.2rem;
 }
 
-.dropdown a {
+/*.dropdown a {
   width: 100%;
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -203,7 +203,7 @@ nav {
   border-right: 1px solid rgb(100, 10, 10);
   color: white;
   text-align: center;
-}
+}*/
 
 .dropdown a:hover,
 .dropdown a:active {

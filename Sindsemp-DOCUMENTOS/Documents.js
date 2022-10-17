@@ -9,11 +9,6 @@ hamburgerMenu.addEventListener("click", function () {
   hamburgerMenuDropdown.classList.toggle("is-active");
 });
 
-
-
-
-
-
 btnSubmenu.addEventListener("click", function(){
   hamburgerMenu.classList.toggle("is-active");
   submenu.classList.toggle("is-active");
